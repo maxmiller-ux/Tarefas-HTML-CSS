@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 02 - Todas as Classes de Background</title>
+    <style>
+        /* Estilo geral para os blocos de teste ficarem visíveis */
+        .bloco-teste {
+            padding: 25px;
+            margin-bottom: 15px;
+            border: 2px solid #333;
+            font-family: Arial, sans-serif;
+            color: #000;
+        }
+
+        /* a. Classe para cor de fundo azul claro */
+        .classe-a {
+            background-color: lightblue;
+        }
+
+        /* b. Classe para cor de fundo de um parágrafo em verde claro */
+        .classe-b {
+            background-color: lightgreen;
+        }
+
+        /* c. Imagem de fundo, repetição em qualquer estilo (repeat) e fixa (attachment fixed) */
+        .classe-c {
+            background-image: url('sua-imagem.jpg');
+            background-repeat: repeat;
+            background-attachment: fixed;
+            color: white; /* Cor branca para destacar texto sobre a imagem */
+        }
+
+        /* d. Imagem de fundo e repeti-la na vertical (repeat-y) */
+        .classe-d {
+            background-image: url('sua-imagem.jpg');
+            background-repeat: repeat-y;
+        }
+
+        /* e. Imagem de fundo e não repeti-la (no-repeat) */
+        .classe-e {
+            background-image: url('sua-imagem.jpg');
+            background-repeat: no-repeat;
+        }
+
+        /* f. Imagem de fundo sem repeti-la e centralizada (no-repeat e center) */
+        .classe-f {
+            background-image: url('sua-imagem.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        /* g. Fundo amarelo, figura de fundo, sem repetição, centralizada e que acompanha o deslocamento (scroll) */
+        .classe-g {
+            background-color: yellow;
+            background-image: url('sua-imagem.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: scroll;
+        }
+    </style>
+</head>
+<body style="padding: 20px; background-color: #f4f4f4;">
+
+    <h1>Testando todas as regras do Exercício 2</h1>
+    <p>Cada bloco abaixo utiliza a sua respectiva classe exigida pelo exercício:</p>
+
+    <!-- Letra A -->
+    <div class="bloco-teste classe-a">
+        <strong>Letra A:</strong> Cor de fundo azul claro.
+    </div>
+
+    <!-- Letra B -->
+    <p class="bloco-teste classe-b">
+        <strong>Letra B:</strong> Cor de fundo de parágrafo em verde claro.
+    </p>
+
+    <!-- Letra C -->
+    <div class="bloco-teste classe-c">
+        <strong>Letra C:</strong> Imagem com repetição livre e fixa (fixed).
+    </div>
+
+    <!-- Letra D -->
+    <div class="bloco-teste classe-d">
+        <strong>Letra D:</strong> Imagem repetida apenas na vertical (repeat-y).
+    </div>
+
+    <!-- Letra E -->
+    <div class="bloco-teste classe-e">
+        <strong>Letra E:</strong> Imagem sem repetição (no-repeat).
+    </div>
+
+    <!-- Letra F -->
+    <div class="bloco-teste classe-f">
+        <strong>Letra F:</strong> Imagem sem repetição e centralizada (center).
+    </div>
+
+    <!-- Letra G -->
+    <div class="bloco-teste classe-g">
+        <strong>Letra G:</strong> Fundo amarelo, imagem centralizada, sem repetição e com scroll.
+    </div>
+
+</body>
+</html>
